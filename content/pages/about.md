@@ -1,8 +1,12 @@
 title: About
 slug: about
 date: 2019-05-01
-modified: 2019-05-01
+modified: 2019-05-12
 
-My name is Jim Lynn and this is my really cool about page.  I will tell you all of the wonderful things I have done.  
-  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet justo donec enim diam vulputate. Posuere sollicitudin aliquam ultrices sagittis. Nibh praesent tristique magna sit amet purus gravida quis blandit. Condimentum lacinia quis vel eros donec ac odio. Purus faucibus ornare suspendisse sed. Sed euismod nisi porta lorem mollis aliquam ut. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Fusce ut placerat orci nulla pellentesque dignissim. Porttitor massa id neque aliquam vestibulum morbi. Pharetra convallis posuere morbi leo urna molestie. Semper viverra nam libero justo laoreet sit amet. Mattis rhoncus urna neque viverra justo nec ultrices. Magna eget est lorem ipsum dolor sit amet. Et netus et malesuada fames ac turpis egestas integer eget.
+Hello, welcome to my blog.  My name is Jim Lynn and I started this blog to share information, experiences and things that I find interesting.  
+
+I was born in Stillwater Oklahoma, but grew up in Southeastern New Mexico.  After graduation from Eastern New Mexico University, in 1979, I moved back to Oklahoma and have lived here ever since.
+
+I discovered my passion for computing my senior year of high school when taking a data processing class at New Mexico Junior College in Hobbs New Mexico.  (Learning BASIC on a DEC PDP1140).   I spent the next 40 years in Information Technolgy before retiring in 2018.  Even after 45+ years, I still enjoy writing code.  
+
+I hope that you find my blog both interesting as well as entertaining.
