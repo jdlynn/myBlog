@@ -5,7 +5,9 @@ layout: layouts/post.njk
 hideTagsList: true
 permalink: "about.html"
 ---
-### About this Website
+
+
+
 This website is an attempt to learn more about web development, to capture useful information for myself or others and to have a presence on the web.  I will use Bootstrap 5 to style my site, Eleventy to generate the site and Netlify to host the finished website.  I plan to create blog entries documenting this process.  This is a work in progress and most likely will be modified as I learn more.
 
 ### About Jim
