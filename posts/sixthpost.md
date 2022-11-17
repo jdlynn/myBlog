@@ -1,7 +1,9 @@
 ---
+author: "Jim Lynn"
 title: This is my sixth post.
 description: This is a post on My Blog about touchpoints and circling wagons.
 date: 2021-03-22
+image: /static/img/undraw_pumpkin_re_bm46.svg
 tags:
  - another tag
  - css

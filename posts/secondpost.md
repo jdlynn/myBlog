@@ -1,7 +1,9 @@
 ---
+author: "Jim Lynn"
 title: My very second post
 date: 2021-03-10
 description: Nesciunt nulla quisquam magnam libero consequatur debitis est, dolorum quam
+image: /static/img/undraw_welcome_cats_thqn.svg
 tags:
   - hello
   - second

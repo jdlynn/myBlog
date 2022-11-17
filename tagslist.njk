@@ -1,22 +1,44 @@
 ---
-title: List of all tags
-layout: layouts/base.njk
+title: List of All Tags
+layout: layouts/post.njk
+hideTagsList: true
 permalink: /tags/
-eleventyNavigation:
-  key: Tags
-  weight: 1
+teal: --bs-teal
+yellow: --bs-yellow
+pink:  --bs-pink
+orange: --bs-orange
+cyan: --bs-cyan
+purple: --bs-purple
+red: --bs-red
 ---
 
+
+
 <div class="container">
-
-  <h1>All Tags</h1>
-
-  <div class="card-grid">
+  <div class="row">
     {% for tag in collections.tagList %}
-    <div class="card">
-      <h2 class="card__title"><a href="{{ '/tags/' | url }}{{ tag.tagName | slug }}">{{ tag.tagName }}</a></h2>
-      <div class="card__subtitle">{{ tag.tagCount }} Posts</div>
-    </div>
+        {% if (loop.index % 7) == 1  %}
+           {%  set color = cyan %}
+        {% elif (loop.index % 7) == 2 %}
+            {%  set color = orange %}
+        {% elif (loop.index % 7) == 3 %}
+            {%  set color = teal %}
+        {% elif (loop.index % 7) == 4 %}
+            {%  set color = yellow %}
+        {% elif (loop.index % 7) == 5 %}
+            {%  set color = purple %}
+        {% elif (loop.index % 7) == 6 %}
+            {%  set color = red %}
+        {% else %}
+            {%  set color = pink %}
+        {% endif %}
+     <div class="col-12 col-md-6 col-xl-4 pt-4">
+        <div class="card" style="background: var({{ color }});">
+            <div class="card-body"><a style="font-size: 36px;color: var(--bs-white);" href="{{ '/tags/' | url }}{{ tag.tagName | slug }}">{{ tag.tagName }}</a>
+                <h4 class="card-title" style="color: var(--bs-black);">{{ tag.tagCount }} Posts</h4>
+            </div>
+        </div>
+     </div>
     {% endfor %}
   </div>
 </div>

@@ -1,8 +1,9 @@
 ---
-author: Me
+author: "Jim Lynn"
 title: Markdown Syntax Guide 2
 date: 2021-03-24
 description: Copy of the sample article showcasing basic Markdown syntax and formatting for HTML elements.
+image: /static/img/undraw_landscape_photographer_re_emqj.svg
 tags:
  - markdown
  - css

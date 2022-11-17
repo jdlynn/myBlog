@@ -1,7 +1,9 @@
 ---
+author: "Jim Lynn"
 title: My very first post
 date: 2021-03-10
 description: Nesciunt nulla quisquam magnam libero consequatur debitis est, dolorum quam excepturi soluta
+image: /static/img/undraw_dog_re_758r.svg
 tags:
   - hello
   - css

@@ -1,8 +1,9 @@
 ---
-author: "Me"
+author: "Jim Lynn"
 title: Another Placeholder Post
 date: 2021-03-20
 description: Lorem Ipsum Dolor Si Amet consecuteor hello
+image: /static/img/undraw_flying_drone_re_irel.svg
 tags:
   - markdown
   - text
