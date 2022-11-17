@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 4 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.32,0,0,0.32,0,0)">
+        <g>
+            <rect x="0" y="0" width="11.811" height="11.811" style="fill:rgb(68,47,145);"/>
+            <g transform="matrix(3.125,-0,-0,3.125,0,0)">
+                <use xlink:href="#_Image1" x="0.056" y="0" width="3px" height="3px"/>
+            </g>
+            <g transform="matrix(3.125,-0,-0,3.125,0,0)">
+                <use xlink:href="#_Image2" x="1.414" y="1.082" width="3px" height="3px"/>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="3px" height="3px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAKUlEQVQImQXBwREAIBACseUce7AXW7L/FwwmADvJa6uxfSUdYKmtgAH4Nc8MtwrUoUcAAAAASUVORK5CYII="/>
+        <image id="_Image2" width="3px" height="3px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAALUlEQVQImQXBsQ0AIAzAsFDRU9h4AYmV/6+pOgSbqnrqBIjMPMBWB+rq7qvGB1QNEwDYQhV5AAAAAElFTkSuQmCC"/>
+    </defs>
+</svg>
