@@ -6,3 +6,11 @@
 .pagination__next {
   margin-left: auto;
 }
+
+.hero-img {
+    max-height: 22rem;
+}
+
+.blog-img {
+    max-height: 12rem;
+}
