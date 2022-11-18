@@ -11,8 +11,8 @@ pagination:
 
   {% include "components/postslist.njk" %}
 
-
-  <div class="pagination">
+<div class="container">
+  <div class="pagination my-2">
       {% if pagination.previous %}
         <a href="{{ pagination.href.previous | url }}" class="pagination__prev">&larr; Prev Page</a>
       {% endif %}
