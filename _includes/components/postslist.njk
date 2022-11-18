@@ -3,10 +3,10 @@
 {% for post in posts %}
     <div class="col-12 col-md-6 col-lg-4 my-3">
         <div class="card h-100">
-            <img class="card-img-top w-100 d-block pt-2" src="{{ post.data.image }}" />
+            <img class="card-img-top w-100 d-block pt-2 blog-img" src="{{ post.data.image }}" />
             <div class="card-body">
                 <h4 class="card-title">{{ post.data.title }}</h4>
-                <p class=" fw-light text-muted" style="height: 24;margin-bottom: 1px;">
+                <p class=" fw-light text-muted" style="margin-bottom: 1px;">
                     <i class="bi-person-circle" style="width: 8px;height: 8px;"></i>
                     <span style="font-size: 12px;margin-right: 10px;">
                          {{ post.data.author }}
