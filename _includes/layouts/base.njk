@@ -17,7 +17,8 @@
   <body>
     <div class="container">
         {% include 'components/navbar.njk' %}
-        {% include 'components/hero.njk' %}
+        {% block hero %}
+        {% endblock %}
         {{ content | safe }}
         {% include 'components/footer.njk' %}
     </div>

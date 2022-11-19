@@ -1,7 +1,7 @@
 ---
 title: About
 description: All about me in this page
-layout: layouts/post.njk
+layout: layouts/other.njk
 hideTagsList: true
 permalink: "about.html"
 ---
