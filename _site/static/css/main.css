@@ -8,9 +8,15 @@
 }
 
 .hero-img {
-    max-height: 22rem;
+    max-height: 20rem;
+}
+
+.post-img {
+    max-height: 20rem;
+     margin-bottom:  5px;
+    margin-top:  3px;
 }
 
 .blog-img {
-    max-height: 12rem;
+    max-height: 10rem;
 }
