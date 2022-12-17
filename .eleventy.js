@@ -2,13 +2,25 @@ const { DateTime } = require('luxon')
 const navigationPlugin = require('@11ty/eleventy-navigation')
 const rssPlugin = require('@11ty/eleventy-plugin-rss')
 
+
 module.exports = (config) => {
   config.addPlugin(navigationPlugin);
   config.addPlugin(rssPlugin);
 
   config.addPassthroughCopy('css');
   config.addPassthroughCopy('static');
-  
+
+  /**************** Markdown Plugins********************/
+  let markdownIt = require("markdown-it");
+  const markdownItAttrs = require('markdown-it-attrs');
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true
+  };
+  let markdownLib = markdownIt(options).use(markdownItAttrs);
+ config.setLibrary("md", markdownLib);
+
   config.setDataDeepMerge(true);
 
   config.addFilter('htmlDateString', (dateObj) => {

@@ -20,3 +20,9 @@
 .blog-img {
     max-height: 10rem;
 }
+
+pre {
+    border: 1px forestgreen;
+    padding: 6px;
+    background-color: #cfc;
+}

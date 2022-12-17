@@ -55,4 +55,9 @@
     <loc>https://example.com/contact.html</loc>
     <lastmod>2022-11-17</lastmod>
   </url>
+  
+  <url>
+    <loc>https://example.com/posts/pytube/</loc>
+    <lastmod>2022-12-16</lastmod>
+  </url>
 </urlset>
