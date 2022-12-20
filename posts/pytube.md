@@ -3,7 +3,7 @@ author: "Jim Lynn"
 title: Download from YouTube with Python
 date: 2022-12-16
 description: Pytube and ffmpeg-python provide an easy way to download and view YouTube videos and audio only files. 
-image: /static/img/MarkdownPost.svg
+image: /static/img/undraw_portfolio.svg
 tags:
  - Python
  - YouTube
