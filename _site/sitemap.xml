@@ -2,21 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://example.com/posts/firstpost/</loc>
-    <lastmod>2021-03-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/posts/secondpost/</loc>
-    <lastmod>2021-03-10</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/posts/markdown-syntax/</loc>
-    <lastmod>2021-03-16</lastmod>
-  </url>
-  
-  <url>
     <loc>https://example.com/posts/placeholder-text/</loc>
     <lastmod>2021-03-19</lastmod>
   </url>
@@ -27,13 +12,8 @@
   </url>
   
   <url>
-    <loc>https://example.com/posts/sixthpost/</loc>
-    <lastmod>2021-03-22</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://example.com/posts/markdown-syntax-two/</loc>
-    <lastmod>2021-03-24</lastmod>
+    <loc>https://example.com/posts/markdown-syntax/</loc>
+    <lastmod>2022-03-16</lastmod>
   </url>
   
   <url>
@@ -59,5 +39,15 @@
   <url>
     <loc>https://example.com/posts/pytube/</loc>
     <lastmod>2022-12-16</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/MarkdownClassAttrs/</loc>
+    <lastmod>2022-12-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/addingandPublishingPosts/</loc>
+    <lastmod>2022-12-20</lastmod>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 ---
 author: "Unknown"
 title: Markdown Syntax Guide
-date: 2021-03-16
+date: 2022-03-16
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
 image: /static/img/MarkdownPost.svg
 tags:
