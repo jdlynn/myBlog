@@ -1,0 +1,11 @@
+---
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tags
+  reverse: true
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+
+{% include "components/taglist.njk" %}
