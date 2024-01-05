@@ -1,11 +1,14 @@
 ---
+subtitle: Tagged Posts
+layout: layouts/other.njk
 pagination:
-  data: collections.tags
+  data: collections
   size: 1
-  alias: tags
-  reverse: true
+  alias: tag
 permalink: /tags/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
+
+{% set taglist = collections[ tag ] %}
 
 {% include "components/taglist.njk" %}
+

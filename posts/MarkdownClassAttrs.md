@@ -5,8 +5,8 @@ date: 2022-12-20
 description:  Implementing markdown-it-attrs will provide css classes to Eleventy's markdown. 
 image: /static/img/undraw_blogging.svg
 tags:
- - Eleventy
- 
+ - eleventy
+ - markdown 
 ---
 
 Markdown doesn't support using classes natively, but installing the "markdown-it-attrs" module will add this functionality.   This document outlines the process of installing and using in Eleventy.  
