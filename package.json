@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "concurrently": "^6.0.0",
+    "eleventy-plugin-code-clipboard": "^0.2.0",
     "luxon": "^1.26.0"
   },
   "scripts": {
@@ -16,7 +17,8 @@
     "dev": "yarn watch:11ty"
   },
   "dependencies": {
-    "markdown-it": "^13.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "markdown-it": "^13.0.2",
     "markdown-it-attrs": "^4.1.6"
   }
 }

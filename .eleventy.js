@@ -1,57 +1,59 @@
-const { DateTime } = require('luxon')
-const navigationPlugin = require('@11ty/eleventy-navigation')
-const rssPlugin = require('@11ty/eleventy-plugin-rss')
+const { DateTime } = require("luxon");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const codeClipboard = require("eleventy-plugin-code-clipboard");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const markdownIt = require("markdown-it");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+module.exports = function (eleventyConfig) {
+  // Add plugins
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(syntaxHighlight); // Ensure syntax highlight is also added
+  eleventyConfig.addPlugin(codeClipboard);
+  eleventyConfig.addPlugin(pluginRss);
 
 
-module.exports = (config) => {
-  config.addPlugin(navigationPlugin);
-  config.addPlugin(rssPlugin);
-
-  config.addPassthroughCopy('css');
-  config.addPassthroughCopy('static');
-
-  /**************** Markdown Plugins********************/
-  let markdownIt = require("markdown-it");
-  const markdownItAttrs = require('markdown-it-attrs');
+  // Customize Markdown-it
   let options = {
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
+    typographer: true
   };
-  let markdownLib = markdownIt(options).use(markdownItAttrs);
- config.setLibrary("md", markdownLib);
+  let markdownLib = markdownIt(options);
+  eleventyConfig.setLibrary("md", markdownLib);
 
-  config.setDataDeepMerge(true);
-
-  config.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  // Luxon filters for date formatting
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd LLL yyyy");
   });
 
-  config.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL, yyyy");
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
   });
 
-  config.addCollection("tagList", collection => {
-    const tagsObject = {}
-    collection.getAll().forEach(item => {
-      if (!item.data.tags) return;
-      item.data.tags
-        .filter(tag => !['post', 'all'].includes(tag))
-        .forEach(tag => {
-          if(typeof tagsObject[tag] === 'undefined') {
-            tagsObject[tag] = 1
-          } else {
-            tagsObject[tag] += 1
-          }
-        });
-    });
-
-    const tagList = []
-    Object.keys(tagsObject).forEach(tag => {
-      tagList.push({ tagName: tag, tagCount: tagsObject[tag] })
-    })
-    return tagList.sort((a, b) => b.tagCount - a.tagCount)
-
+  // Example: Return your blog posts collection in reverse chronological order
+  eleventyConfig.addCollection("posts", function (collection) {
+    return collection.getFilteredByGlob("./src/posts/*.md").reverse();
   });
 
-}
+  // Passthrough copy for CSS, images, and other assets
+  eleventyConfig.addPassthroughCopy("./src/styles");
+  eleventyConfig.addPassthroughCopy("./src/images");
+
+   const markdownLibrary = markdownIt({
+    html: true
+  }).use(codeClipboard.markdownItCopyButton);
+
+  eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // Return configuration object
+  return {
+    dir: {
+      input: ".",
+      output: "_site",
+      includes: "_includes",
+      data: "_data"
+    },
+  };
+};

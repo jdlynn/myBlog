@@ -1,5 +1,7 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css");
+
 .introHeading {
-    padding-left: my-5;
+    padding-left: 5px;
     margin-top: 15px;
     margin-bottom:  15px;
 }
@@ -22,7 +24,17 @@
 }
 
 pre {
-    border: 1px forestgreen;
+    border: 1px #0096FF;
     padding: 6px;
-    background-color: #cfc;
+    background-color: #87CEEB;
 }
+
+.code-copy {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    }
+
+.code-copy > svg {
+        fill: white; /* Change SVG icon color */
+    }
