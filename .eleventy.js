@@ -32,16 +32,49 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
   });
 
-  // Example: Return your blog posts collection in reverse chronological order
-  eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getFilteredByGlob("./src/posts/*.md").reverse();
-  });
 
   // Passthrough copy for CSS, images, and other assets
   eleventyConfig.addPassthroughCopy("./static/css");
   eleventyConfig.addPassthroughCopy("./static/img");
   eleventyConfig.addPassthroughCopy("assets");
+      // In your .eleventy.js config
 
+  // eleventyConfig.addCollection("tagList", function(collectionApi) {
+  //   const tags = new Set();
+  //   collectionApi.getAll().forEach(item => {
+  //     if (item.data.tags) {
+  //       if (Array.isArray(item.data.tags)) {
+  //         item.data.tags.forEach(tag => tags.add(tag));
+  //       } else {
+  //         tags.add(item.data.tags);
+  //       }
+  //     }
+  //   });
+  //   return Array.from(tags).sort(); // Sort for consistent order
+  // });
+
+    eleventyConfig.addCollection('tagListWithCount', (collectionApi) => {
+      const allPosts = collectionApi.getAll();
+      const countPostsByTag = new Map();
+
+      allPosts.forEach((post) => {
+        // Get all tags for the current post, or an empty array if none exist
+        const tags = post.data.tags || [];
+
+        tags.forEach((tag) => {
+          // Exclude system tags that you don't want to display
+          if (['post', 'all'].includes(tag)) {
+            return;
+          }
+
+          const count = countPostsByTag.get(tag) || 0;
+          countPostsByTag.set(tag, count + 1);
+        });
+      });
+
+    // Return an array of [tag, count] pairs, sorted by tag name
+      return [...countPostsByTag].sort((a, b) => a[0].localeCompare(b[0]));
+    });
 
    const markdownLibrary = markdownIt({
     html: true

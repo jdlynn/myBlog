@@ -4,10 +4,7 @@ title: Markdown Syntax Guide
 date: 2022-03-16
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
 image: /static/img/MarkdownPost.svg
-tags:
- - markdown
- - css
- - html
+tags: ['markdown', 'css', 'html']
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Eleventy content files, also it shows whether basic HTML elements are decorated with CSS in a Eleventy theme.

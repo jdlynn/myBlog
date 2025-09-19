@@ -4,9 +4,7 @@ title: Download from YouTube with Python
 date: 2022-12-16
 description: Pytube and ffmpeg-python provide an easy way to download and view YouTube videos and audio only files. 
 image: /static/img/undraw_portfolio.svg
-tags:
- - Python
- - YouTube
+tags: ['python', 'Youtube']
 ---
 
 I like listening to podcasts while walking my dog and wanted to listen to sermons from my local church.  Unfortunately, the sermons are only full videos on YouTube.  Extracting only the audio is what began my journey to pytube and ffmpeg-python. I like Python, and it seemed like a likely place to begin.   I did a Google search for python packages that could help me and that's when I discovered pytube!!  Pytube provides functionality that allows not only the ability to download the audio from YouTube videos,  but provides lots of other functionality as well. I will document several of the capabilities that I employ in this post.

@@ -4,8 +4,7 @@ title: Another Placeholder Post
 date: 2021-03-20
 description: Lorem Ipsum Dolor Si Amet consecuteor hello
 image: /static/img/undraw_flying_drone_re_irel.svg
-tags:
-  - markdown
+tags: ['markdown']
 ---
 
 Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.

@@ -15,7 +15,7 @@ red: --bs-red
 
 <div class="container">
   <div class="row">
-    {% for tag in collections.tagList %}
+    {% for tag, count  in collections.tagListWithCount %}
         {% if (loop.index % 7) == 1  %}
            {%  set color = cyan %}
         {% elif (loop.index % 7) == 2 %}
@@ -33,8 +33,8 @@ red: --bs-red
         {% endif %}
      <div class="col-12 col-md-6 col-xl-4 pt-4">
         <div class="card" style="background: var({{ color }});">
-            <div class="card-body"><a style="font-size: 36px;color: var(--bs-white);" href="{{ '/tags/' | url }}{{ tag.tagName | slug }}">{{ tag.tagName }}</a>
-                <h4 class="card-title" style="color: var(--bs-black);">{{ tag.tagCount }} Posts</h4>
+            <div class="card-body"><a style="font-size: 36px;color: var(--bs-white);" href="{{ '/tags/' | url }}{{ tag | slug }}">{{ tag }}</a>
+                <h4 class="card-title" style="color: var(--bs-black);">{{ count }} {{  tag }}</h4>
             </div>
         </div>
      </div>

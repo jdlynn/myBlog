@@ -3,10 +3,7 @@ title: Adding and Publish new Posts
 date: 2022-12-20
 description: Process used to add new blog posts and publish the updated blog. 
 image: /static/img/undraw_blog_post.svg  
-tags:
-  - blog
-  - eleventy
-  
+tags: ['blog', 'eleventy']
 ---
 Use the following processes to add new posts to the blog and later to publish the updated blog.  
 
