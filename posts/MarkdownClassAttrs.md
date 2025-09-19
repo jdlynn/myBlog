@@ -14,14 +14,14 @@ Markdown doesn't support using classes natively, but installing the "markdown-it
 ## Install necessary modules
 The modules "markdown-it" and "markdown-it-attrs" need to be installed.  Use the commands below to accomplish:
 
-```
+```code
 yarn add markdown-it
 yarn ad markdown-it-addrs 
 ``` 
 ## Add Markdown config to Eleventy
 Add the following lines into .eleventy.js to activate the markdown modules. 
 
-```
+```code
 /**************** Markdown Plugins********************/
   let markdownIt = require("markdown-it");
   const markdownItAttrs = require('markdown-it-attrs');
@@ -36,7 +36,7 @@ Add the following lines into .eleventy.js to activate the markdown modules.
 ## Add classes to Markdown
 Below is an example of adding a class to an image.  
 
-```
+```code
 ]![Screen image with url](/static/img/requiredURL.png "Required url"){ .img-fluid .post-img}
 ```
 
