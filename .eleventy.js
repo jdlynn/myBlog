@@ -38,8 +38,10 @@ module.exports = function (eleventyConfig) {
   });
 
   // Passthrough copy for CSS, images, and other assets
-  eleventyConfig.addPassthroughCopy("./src/styles");
-  eleventyConfig.addPassthroughCopy("./src/images");
+  eleventyConfig.addPassthroughCopy("./static/css");
+  eleventyConfig.addPassthroughCopy("./static/img");
+  eleventyConfig.addPassthroughCopy("assets");
+
 
    const markdownLibrary = markdownIt({
     html: true
