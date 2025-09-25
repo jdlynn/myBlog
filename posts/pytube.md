@@ -28,7 +28,7 @@ Once both packages were installed I was ready to write the code to download the 
 ![Screen image with url](/static/img/requiredURL.png "Required url"){ .img-fluid .post-img}
 
 Below is the code that would download the audio from YouTube. 
-```code
+```python
  from pytube import YouTube
 
     
@@ -50,7 +50,7 @@ Pytube also includes command line utilities where you could accomplish the captu
 ```
 
 If you would like to download all the videos (or audio only) from a playlist, you can capture the url of the playlist and use in the script below.  Again, everything will be saved in the current directory.  
-```code
+```python
 
  from pytube import YouTube, Playlist
 
@@ -70,7 +70,7 @@ If you would like to download all the videos (or audio only) from a playlist, yo
 ```
 The last function I wanted to document is capturing the high resolution video and audio and combine them into one file using ffmpeg to merge the audio and video into one file.  
 
-```code
+```python
  from pytube import YouTube
  import ffmpeg
 
