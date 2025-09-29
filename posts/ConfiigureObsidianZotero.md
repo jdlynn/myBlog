@@ -17,14 +17,20 @@ Zotero notes to Obsidian.
 
 ## Plugins
 ### BetterBibTex for Zotero plugin
-* Open up Zotero. 
-* Go to Zotero's download page and download the Better BibTeX for Zotero plugin (.xpi file). 
-* In Zotero, go to Tools > Plugins > the gear icon and select Install plugin From File....
+* Open up Zotero.
+* Go to Tools > Plugins 
+* Click on link to "Zotero Plugins directory"
 * Look for "Better BibTex" on the plugin page.  
 * Click the link.  
 * On Better BibTex page, select download and download the plugin 
 * Click on Gear icon and choose "install plugin from file"
 * Select the file you downloaded (.xpi file)
+
+## Setup BetterBibTex to automatically export
+* In Zotero, select your entire library.
+* Right-click and choose Export Library....
+* Select Better CSL JSON as the format and check the Keep updated box.
+* Save this file "My Library.json" to your Obsidian Vault. 
 
 ### Create Obsidian Template to use during the zotero Import
 * Create new directory in Obsidian.  Name it "templates"
