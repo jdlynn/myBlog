@@ -3,7 +3,7 @@ author: "Me"
 title: Placeholder Text
 date: 2021-03-19
 description: Lorem Ipsum Dolor Si Amet
-image: /static/img/undraw_landscape_photographer_re_emqj.svg
+image: /static/img/undraw_blog_1ca8.svg
 tags: ['markdown', 'text']
 ---
 
