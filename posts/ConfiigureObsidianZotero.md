@@ -4,7 +4,7 @@ title: Configure Obsidian/Zotero Bridge
 date: 2025-09-29
 description: Show process required to configure Obsidian to use Zotero.  
 image: /static/img/undraw_personal-website_kz7a.svg
-tags: ['markdown', 'text']
+tags: ['zotero', 'obsidian']
 ---
 
  This document will outline the process necessary to create a bridge between Zotero and Obsidian.  I'm assuming 
