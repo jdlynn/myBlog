@@ -1,4 +1,5 @@
 ---
+author: "Jim Lynn"
 title: Adding and Publish new Posts
 date: 2022-12-20
 description: Process used to add new blog posts and publish the updated blog. 

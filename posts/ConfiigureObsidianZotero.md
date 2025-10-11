@@ -1,5 +1,5 @@
 ---
-author: "Me"
+author: "Jim Lynn"
 title: Configure Obsidian/Zotero Bridge
 date: 2025-09-29
 description: Show process required to configure Obsidian to use Zotero.  

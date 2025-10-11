@@ -1,5 +1,5 @@
 ---
-author: "Unknown"
+author: "Jim LYnn"
 title: Markdown Syntax Guide
 date: 2022-03-16
 description: Sample article showcasing basic Markdown syntax and formatting for HTML elements.
@@ -10,6 +10,7 @@ tags: ['markdown', 'css', 'html']
 This article offers a sample of basic Markdown syntax that can be used in Eleventy content files, also it shows whether basic HTML elements are decorated with CSS in a Eleventy theme.
 <!--more-->
 
+{% raw %}
 ## Headings
 
 The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
@@ -356,3 +357,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+{% endraw %}
