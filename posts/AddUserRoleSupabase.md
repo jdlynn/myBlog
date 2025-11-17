@@ -75,6 +75,8 @@ Access will have to be granted to the hook for it to function.
 GRANT EXECUTE ON FUNCTION public.custom_access_token_hook TO supabase_auth_admin;
 GRANT USAGE ON SCHEMA public TO supabase_auth_admin;
 REVOKE EXECUTE ON FUNCTION public.custom_access_token_hook FROM authenticated, anon, public;
+GRANT ALL ON TABLE public.user_roles TO supabase_auth_admin;
+REVOKE ALL ON TABLE public.user_roles FROM authenticated, anon, public;
 ```
 <br>
 
