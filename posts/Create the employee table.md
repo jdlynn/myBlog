@@ -3,7 +3,7 @@ author: "Jim Lynn"
 title: Adding the employees table to Supabase 
 date: 2025-11-22
 description: Steps required add the employees table to Supabase
-image: /static/img/undraw_blog_post.svg  
+image: /static/img/undraw_login_weas.svg  
 tags: ['Supabase', 'fastAPI']
 ---
 Use the following instructions add the employees table to supabase and create a trigger to automatically

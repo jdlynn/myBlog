@@ -3,7 +3,7 @@ author: "Jim Lynn"
 title: Adding a user role to a Supabase project. 
 date: 2025-11-13
 description: Steps required to add a User role to a Supabase Project
-image: /static/img/undraw_blog_post.svg  
+image: /static/img/undraw_blogging.svg  
 tags: ['Supabase', 'fastAPI']
 ---
 Use the following instructions in a Supabase project to add user_role to jwt token generated at login.
